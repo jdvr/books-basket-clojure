@@ -30,7 +30,7 @@
     )
 
 
-  (testing "given a basket full of book eligible for a discount should return the sum of every book price"
+  (testing "given a basket full of book eligible for a discount should return the sum of every book price after applying the discount"
     (is (= 17 (net all-eligible-for-discount)))
     )
 
