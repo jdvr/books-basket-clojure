@@ -22,3 +22,7 @@ Based on https://github.com/ericlemerdy/one-kata-per-day/tree/master/SOLID
 
 * Run: ```lein run```
 * Test: ```lein test```
+
+## Looking for books themes...
+
+[A Huge List of Common Themes](https://literarydevices.net/a-huge-list-of-common-themes/)
