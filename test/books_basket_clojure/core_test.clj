@@ -15,7 +15,7 @@
     )
 
   (testing "given a basket full of book with a discount should return the sum of every book price"
-    (is (= 21 (gross all-eligible-for-discount)))
+    (is (= 20 (gross all-eligible-for-discount)))
     )
   )
 
@@ -25,13 +25,8 @@
     (is (= 0 (net [])))
     )
 
-  (testing "given a basket full of book eligible for a discount should return the sum of every book price"
-    (is (= 21 (net not-eligible-for-discount)))
-    )
-
-
   (testing "given a basket full of book eligible for a discount should return the sum of every book price after applying the discount"
-    (is (= 17 (net all-eligible-for-discount)))
+    (is (= 17.0 (net all-eligible-for-discount)))
     )
 
 
