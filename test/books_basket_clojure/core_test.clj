@@ -6,10 +6,16 @@
 
 (deftest total-of-a-books-basket
   (testing "given an empty basket should return zero"
-    (is (= 0 (total [])))
+    (is (= 0 (gross [])))
     )
 
   (testing "given a basket full of boot not eligible for a discount should return the sum of every book price"
-    (is (= 21 (total not-eligible-for-discount)))
+    (is (= 21 (gross not-eligible-for-discount)))
+    )
+
+  (testing "given a basket full of boot not eligible for a discount should return the sum of every book price"
+    (is (= 21 (gross not-eligible-for-discount)))
     )
   )
+
+

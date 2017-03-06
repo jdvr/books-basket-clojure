@@ -3,5 +3,5 @@
 
 
 
-(defn total [books]
+(defn gross [books]
   (reduce + 0 (map :price books)))
