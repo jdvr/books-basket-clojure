@@ -31,7 +31,7 @@
     )
 
   (testing "given a basket with three IT books should return the sum of every book price after applying a 30% to each price"
-    (is (= 42 (net it-books-for-discount)))
+    (is (= 42.0 (net it-books-for-discount)))
     )
 
 
