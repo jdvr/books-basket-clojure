@@ -5,6 +5,7 @@
 (def not-eligible-for-discount [{:theme :Beauty :price 5} {:theme :Education :price 7} {:theme :Love :price 9}])
 (def all-eligible-for-discount [{:theme :Fantasy :price 10} {:theme :IT :price 10}])
 (def it-books-for-discount [{:theme :IT :price 10} {:theme :IT :price 20} {:theme :IT :price 30}])
+(def travel-books-for-discount [{:theme :Travel :price 10} {:theme :Travel :price 20} {:theme :Travel :price 30} {:theme :Travel :price 40}])
 
 (deftest gross-of-a-books-basket
   (testing "given an empty basket should return zero"
@@ -34,7 +35,9 @@
     (is (= 42.0 (net it-books-for-discount)))
     )
 
-
+  (testing "given a basket with four Travel books should return the sum of every book price after applying a 40% to each price"
+    (is (= 60.0 (net travel-books-for-discount)))
+    )
   )
 
 
