@@ -4,4 +4,4 @@
 
 
 (defn total [books]
-  0)
+  (reduce + 0 (map :price books)))
