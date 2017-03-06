@@ -8,6 +8,11 @@
           (- price (* 0.3 price))
           (- price (* 0.1 price)))
         )
+  :Travel (fn [price size]
+        (if (> size 3)
+          (- price (* 0.4 price))
+          price)
+        )
 })
 
 (defn not-discount-theme [price size] price)
